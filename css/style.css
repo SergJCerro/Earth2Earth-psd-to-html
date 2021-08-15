@@ -112,7 +112,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-
+  height: 3.5rem;
 }
 .nav {
   height: var(--header-height);
@@ -536,6 +536,12 @@ img {
   .bd-grid{
     margin-left: auto;
     margin-right: auto;
+  }
+  .l-header{
+    height: 3.5rem;
+  }
+  .nav__logo{
+    padding: 5px;
   }
   .home__container{
     column-gap: 8rem;
