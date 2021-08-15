@@ -1,0 +1,32 @@
+   <header id="header" class="l-header">
+      <nav class="nav bd-grid">
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="fa fa-navicon"></i>
+          </div>
+          <a href="./index.html" class="nav__logo"
+            ><img src="./assets/76.png" alt="Earth2Earth_72"
+          /></a>
+       <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list" >
+          <li class="nav__item"><a href="#" rel="noopener noreferrer"class="nav__link active"> Shop</a></li>
+          <li class="nav__item"><a href="#" rel="noopener noreferrer"class="nav__link">Blog</a></li>
+          <li class="nav__item"><a href="#" rel="noopener noreferrer"class="nav__link">About Us</a></li>
+          <li class="nav__item"><a href="#" rel="noopener noreferrer"class="nav__link">Contact Us</a></li>
+        </ul>
+        </div>
+        <div class="nav__shop">
+          <i class="fa fa-money"></i>
+          <i class="fa fa-search"></i>
+          <i class="fa fa-user-o"></i>
+          <i class="fa fa-shopping-bag"></i>
+        </div>
+      </nav>
+    </header>
+
+
+      --dark-color: #4ee44e;
+  --dark-color-light: #76ff7a;
+  --dark-color-lighten: #90ee90;
+  --white-color: #fff;
+  --header: #7ee8fa;
+  --header-color: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
