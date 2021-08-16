@@ -1,36 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap");
 :root {
-    --header-height: 3rem;
-    --font-medium: 500;
-    --font-semi-bold: 600;
-    --font-bold: 700;
-  
-    --dark-color: #4ee44e;
-    --dark-color-light: #76ff7a;
-    --dark-color-lighten: #90ee90;
-    --white-color: #fff;
-    --header: #7ee8fa;
-    --header-color: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
-  
-    --body-font: "Poppins", sans-serif;
-    --big-font-size: 1.25rem;
-    --bigger-font-size: 1.5rem;
-    --biggest-font-size: 2rem;
-    --h2-font-size: 1.25rem;
-    --normal-font-size: 0.939rem;
-    --smaller-font-size: 0.813rem;
-  
-    --mb-1: 0.5rem;
-    --mb-2: 1rem;
-    --mb-3: 1.5rem;
-    --mb-4: 2rem;
-    --mb-5: 2.5rem;
-    --mb-6: 3rem;
-  
-    --z-fixed: 100;
-  
-    --rotate-img: rotate(-30deg);
-  }
+  --header-height: 3rem;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  --dark-color: #4ee44e;
+  --dark-color-light: #76ff7a;
+  --dark-color-lighten: #90ee90;
+  --white-color: #fff;
+  --header: #7ee8fa;
+  --header-color: linear-gradient(315deg, #7ee8fa 0%, #80ff72 74%);
+
+  --body-font: "Poppins", sans-serif;
+  --big-font-size: 1.25rem;
+  --bigger-font-size: 1.5rem;
+  --biggest-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 0.939rem;
+  --smaller-font-size: 0.813rem;
+
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+
+  --z-fixed: 100;
+
+  --rotate-img: rotate(-30deg);
+}
 @media only screen and (min-width: 48rem) {
   :root {
     --big-font-size: 1.5rem;
@@ -53,7 +53,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
-  color: black;
+  color: var(--dark-color);
   line-height: 1.6;
 }
 h1,
@@ -69,7 +69,7 @@ ul {
 }
 a {
   text-decoration: none;
-  color: black;
+  color: var(--dark-color);
 }
 img {
   max-width: 100%;
@@ -97,8 +97,6 @@ img {
   margin: auto;
   background-color: var(--dark-color);
 }
-
-
 .bd-grid {
   max-width: 64rem;
   display: grid;
@@ -114,7 +112,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-
+  background-color: var(--dark-color-lighten);
 }
 .nav {
   height: var(--header-height);
@@ -145,8 +143,8 @@ img {
   font-size: 1.3rem;
   cursor: pointer;
 }
-.nav__shop{
-  float: left;
+.show {
+  left: 0;
 }
 .active {
   position: relative;
@@ -166,8 +164,7 @@ img {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .home {
-  background-color: var(--header);
-  background-image: var(--header-color);
+  background-color: var(--dark-color-lighten);
   overflow: hidden;
 }
 .home__container {
@@ -535,12 +532,6 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
-  .l-header{
-    height: 3.5rem;
-  }
-  .nav__logo{
-    padding: 5px;
-  }
   .home__container{
     column-gap: 8rem;
   }
@@ -604,7 +595,7 @@ img {
 .intro-section .intro-content .tagline .change-container{
     position: relative;
   display: inline-block;
-  width: 300px;
+  width: 560px;
   margin-bottom: 55px;
     margin-top: 30px;
 }
