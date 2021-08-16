@@ -561,3 +561,140 @@ img {
     margin-bottom: var(--mb-6);
   }
 }
+.intro-section {
+  height: 80vh;
+  position: relative;
+  background-image: url('/assets/Custom.jpg');
+}
+
+.intro-section .intro-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.intro-section .intro-content h1 {
+  color:white;
+  font-size: 2rem;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  margin-top: 80px;
+}
+
+.intro-section .intro-content h2{
+  margin-top: 5px;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.intro-section .intro-content p {
+  margin-top: 20px;
+  color: #b1d4e0;
+}
+
+.intro-content .tagline {
+  margin-top:80px;
+}
+
+.intro-section .intro-content .tagline .change-container{
+    position: relative;
+  display: inline-block;
+  width: 560px;
+  margin-bottom: 55px;
+    margin-top: 30px;
+}
+
+.intro-section .intro-content .changing {
+    position: absolute;
+    overflow: hidden;
+  width: 100%;
+  left:0;
+  bottom:0;
+  height:0;
+  opacity:0;
+  color: #b1d4e0;
+  text-transform: uppercase;
+  word-spacing: 10px;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.changing:nth-child(1) {
+  animation: revealNextWord 6s cubic-bezier(0.57, 1.52, 0.9, 1.08) 1.5s infinite;
+}
+
+.changing:nth-child(2) {
+  animation: revealNextWord 6s cubic-bezier(0.57, 1.52, 0.9, 1.08) 3s infinite;
+}
+
+.changing:nth-child(3) {
+  animation: revealNextWord 6s cubic-bezier(0.57, 1.52, 0.9, 1.08) 4.5s infinite;
+}
+
+
+@keyframes revealNextWord {
+  0% { 
+    opacity: 0.3; 
+    height: 0.0; 
+  }
+  10% { 
+    opacity: 1; 
+    height:1.2em; 
+  }
+  20% { 
+    opacity: 1; 
+    height:1.2em; 
+  }
+  28% { 
+    opacity: 0; 
+    height:2em; 
+  }
+  
+}
+
+.intro-section .intro-content .header-btn a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  background-color: #b1d4e0;
+  padding: 15px;
+  border-radius: 5px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.intro-section .intro-content .header-btn a:before{
+    position: absolute;
+  content: ""; 
+  top: 0px;
+  height: 100%;
+  left: -25%;
+  width: 0%;
+  background-color: #3498db;
+  transform: skew(50deg);
+  transition-duration: 1s;
+  z-index: 1;
+}
+
+.intro-section .intro-content .header-btn a:hover{
+  color: black;
+}
+
+.intro-section .intro-content .header-btn a:hover:before{
+  width: 170%;
+
+}
+
+.intro-section .intro-content .header-btn a span{
+    position: relative;
+    z-index: 9;
+}
