@@ -564,7 +564,7 @@ img {
 .intro-section {
   height: 80vh;
   position: relative;
-  background-image: url('/assets/Custom.jpg');
+  background-image: url('../assets/Custom.jpg');
 }
 
 .intro-section .intro-content {
