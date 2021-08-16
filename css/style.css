@@ -564,7 +564,7 @@ img {
 .intro-section {
   height: 80vh;
   position: relative;
-  background-image: url('../assets/Custom.jpg');
+  background-image: url('../assets/Custom-2a.jpg');
 }
 
 .intro-section .intro-content {
@@ -619,7 +619,7 @@ img {
   bottom:0;
   height:0;
   opacity:0;
-  color: #b1d4e0;
+  color: black;
   text-transform: uppercase;
   word-spacing: 10px;
     text-align: center;
@@ -697,4 +697,11 @@ img {
 .intro-section .intro-content .header-btn a span{
     position: relative;
     z-index: 9;
+}
+@media screen and (min-width:300px) {
+  .intro-section {
+    
+    background-image: url('../assets/Custom-2ab.jpg');
+  }
+  
 }
